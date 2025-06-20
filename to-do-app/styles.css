@@ -15,8 +15,10 @@ body{
 
 .inputs{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap:5px;
 }
 
 input{
@@ -37,7 +39,6 @@ button{
     border: none;
     outline: none;
     cursor: pointer;
-    margin-top: 5px;
 }
 button:hover{
     background-color: rgb(6,43 ,43,0.973);
@@ -88,6 +89,9 @@ button:hover{
 @media screen and (min-width:320px) and (max-width:500px) {
     .container{
         width: 200px;
+    }
+    .inputs{
+        flex-direction: column;
     }
     input{
         width: 200px;
